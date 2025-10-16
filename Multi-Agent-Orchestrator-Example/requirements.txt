@@ -1,3 +1,7 @@
 alith
 asyncio
 typing
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
