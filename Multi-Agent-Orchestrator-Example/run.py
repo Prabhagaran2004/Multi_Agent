@@ -1,47 +1,57 @@
-"""
-Multi-Agent Orchestrator - Real AI Execution
-"""
-
-#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
-
 import asyncio
-from orchestrator import MultiAgentOrchestrator, WorkflowBuilder, WorkflowType
-
+from orchestrator import MultiAgentOrchestrator, WorkflowType
 
 async def main():
-    print('🚀 Multi-Agent Orchestrator')
-    print('=' * 40)
-    
-    # Initialize orchestrator
+    print("🏏 Cricket Team Orchestrator")
     orchestrator = MultiAgentOrchestrator()
     orchestrator.initialize_agents()
-    
-    # Create workflow
+
+    # Workflow: prepare team before match
     workflow_id = orchestrator.create_workflow(
-        name='Research and Write Pipeline',
+        name="Team Preparation Workflow",
         workflow_type=WorkflowType.SEQUENTIAL
     )
-    
-    # Add tasks
+
+    # Head Coach plans strategy
     task1 = orchestrator.add_task_to_workflow(
-        workflow_id, 'researcher', 'research', {'topic': 'AI in Healthcare'}
+        workflow_id, "head_coach", "plan_strategy",
+        {"match_info": "Upcoming match against Mumbai Indians"}
     )
-    
+
+    # Batting Coach trains player (depends on strategy)
     task2 = orchestrator.add_task_to_workflow(
-        workflow_id, 'writer', 'write_content', 
-        {'topic': 'AI in Healthcare', 'content_type': 'article'},
+        workflow_id, "batting_coach", "train_batting",
+        {"player_name": "Virat Kohli"},
         dependencies=[task1]
     )
-    
-    # Execute
-    print('🔄 Executing workflow...')
-    results = await orchestrator.execute_workflow(workflow_id)
-    
-    print(f'✅ Completed! Generated {len(results)} outputs')
-    
-    for task_id, result in results.items():
-        print(f'\n📊 Result: {result}')
 
+    # Bowling Coach trains player (depends on strategy)
+    task3 = orchestrator.add_task_to_workflow(
+        workflow_id, "bowling_coach", "train_bowling",
+        {"player_name": "Jasprit Bumrah"},
+        dependencies=[task1]
+    )
+
+    # Physio provides fitness plans
+    task4 = orchestrator.add_task_to_workflow(
+        workflow_id, "head_physio", "provide_fitness_plan",
+        {"player_name": "All Players"},
+        dependencies=[task1]
+    )
+
+    # Player reports performance (depends on training and fitness)
+    task5 = orchestrator.add_task_to_workflow(
+        workflow_id, "player", "report_performance",
+        {"player_name": "All Players"},
+        dependencies=[task2, task3, task4]
+    )
+
+    print("🔄 Executing workflow...")
+    results = await orchestrator.execute_workflow(workflow_id)
+
+    print("\n✅ Workflow Completed!\nResults:")
+    for task_id, output in results.items():
+        print(f"{task_id}: {output[:300]}...")  # truncate long text
 
 if __name__ == "__main__":
     asyncio.run(main())
