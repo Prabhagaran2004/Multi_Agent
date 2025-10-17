@@ -35,4 +35,14 @@ export const fetchWorkflows = async () => {
   return response.data;
 };
 
+export const addCustomAgent = async (agentData) => {
+  const response = await api.post('/api/agents/custom', agentData);
+  return response.data;
+};
+
+export const deleteCustomAgent = async (agentId) => {
+  const response = await api.delete(`/api/agents/custom/${agentId}`);
+  return response.data;
+};
+
 export default api;

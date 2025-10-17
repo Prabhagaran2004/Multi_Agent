@@ -1,16 +1,25 @@
 import { motion } from 'framer-motion';
-import { ChevronRight, Zap } from 'lucide-react';
+import { ChevronRight, Zap, Trash2 } from 'lucide-react';
 
 const colorMap = {
   blue: 'from-blue-500 to-blue-700',
+  cyan: 'from-cyan-500 to-cyan-700',
+  indigo: 'from-indigo-500 to-indigo-700',
   green: 'from-green-500 to-green-700',
   red: 'from-red-500 to-red-700',
   purple: 'from-purple-500 to-purple-700',
   orange: 'from-orange-500 to-orange-700',
 };
 
-const AgentCard = ({ agent, delay, onClick }) => {
+const AgentCard = ({ agent, delay, onClick, onDelete }) => {
   const gradientClass = colorMap[agent.color] || colorMap.blue;
+
+  const handleDelete = (e) => {
+    e.stopPropagation();
+    if (onDelete) {
+      onDelete();
+    }
+  };
 
   return (
     <motion.div
@@ -21,6 +30,19 @@ const AgentCard = ({ agent, delay, onClick }) => {
       whileHover={{ y: -5 }}
       onClick={onClick}
     >
+      {/* Delete button - only show for custom agents */}
+      {onDelete && agent.id.startsWith('agent-') && (
+        <motion.button
+          onClick={handleDelete}
+          className="absolute top-4 right-4 z-20 glass-effect p-2 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-red-500/30 transition-all border border-red-500/50"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          title="Delete Agent"
+        >
+          <Trash2 className="w-4 h-4 text-red-400" />
+        </motion.button>
+      )}
+
       {/* Gradient overlay */}
       <div className={`absolute inset-0 bg-gradient-to-br ${gradientClass} opacity-0 group-hover:opacity-10 transition-opacity`} />
       

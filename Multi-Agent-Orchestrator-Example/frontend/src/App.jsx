@@ -6,7 +6,7 @@ import WorkflowPanel from './components/WorkflowPanel';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoadingSpinner from './components/LoadingSpinner';
-import { fetchAgents } from './services/api';
+import { fetchAgents, deleteCustomAgent } from './services/api';
 
 function App() {
   const [agents, setAgents] = useState([]);
@@ -26,6 +26,20 @@ function App() {
     } catch (error) {
       console.error('Error loading agents:', error);
       setLoading(false);
+    }
+  };
+
+  const handleDeleteAgent = async (agentId) => {
+    try {
+      // Only delete from backend if it's a custom agent (starts with 'agent-')
+      if (agentId.startsWith('agent-')) {
+        await deleteCustomAgent(agentId);
+      }
+      // Remove from local state
+      setAgents(prev => prev.filter(agent => agent.id !== agentId));
+    } catch (error) {
+      console.error('Error deleting agent:', error);
+      alert('Failed to delete agent. Please try again.');
     }
   };
 
@@ -51,7 +65,9 @@ function App() {
       </div>
 
       <div className="relative z-10">
-        <Header onWorkflowClick={() => setShowWorkflow(!showWorkflow)} />
+        <Header 
+          onWorkflowClick={() => setShowWorkflow(!showWorkflow)}
+        />
 
         <main className="container mx-auto px-4 py-8">
           {/* Hero Section */}
@@ -60,13 +76,13 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <motion.h1
+            <h1
               className="text-6xl font-bold mb-4 gradient-text"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
               Cricket Team AI
-            </motion.h1>
+            </h1>
             <p className="text-xl text-white/80">
               Multi-Agent Orchestration System
             </p>
@@ -98,6 +114,7 @@ function App() {
                   agent={agent}
                   delay={index * 0.1}
                   onClick={() => setSelectedAgent(agent)}
+                  onDelete={() => handleDeleteAgent(agent.id)}
                 />
               ))}
             </motion.div>

@@ -1,189 +1,157 @@
-# Multi-Agent Orchestrator Workshop
+# Cricket Team AI - Multi-Agent Orchestrator
 
-A AI-powered multi-agent system using Alith framework with 6 specialized agents that can work together asynchronously.
+A modern, AI-powered multi-agent system for cricket team management with an interactive web interface. Features a beautiful blue and black themed UI with 5 specialized cricket coaching agents.
 
-## What This System Does
+## What This Application Has
 
-- **6 Specialized AI Agents**: Researcher, Writer, Analyzer, Translator, Summarizer, Code Reviewer
-- **Multi-Agent Orchestrator**: Coordinates agents in sequential or parallel workflows
-- **Real AI Responses**: Uses OpenAI GPT-4 for all agent interactions
-- **Async Execution**: Handles multiple agents working together efficiently
+### **Frontend Features**
+- 🎨 **Modern Blue/Black UI**: Sleek gradient design with smooth animations
+- 🤖 **5 Specialized AI Agents**: Each with unique roles and capabilities
+- 💬 **Interactive Agent Chat**: Click any agent to interact and get AI-powered responses
+- 🔄 **Workflow Execution**: Execute complete multi-agent workflows for team preparation
+- 📱 **Responsive Design**: Works seamlessly on desktop and mobile
+- ✨ **Smooth Animations**: Powered by Framer Motion for fluid user experience
 
-## Prerequisites
+### **AI Agents**
 
-- Python 3.8+
-- OpenAI API Key
+| Agent | Role | Capabilities |
+|-------|------|-------------|
+| **🎯 Head Coach** | Strategic Planning | Match strategy, opponent analysis, team motivation, game plans |
+| **🏏 Batting Coach** | Batting Excellence | Technique improvement, training drills, weakness analysis |
+| **⚡ Bowling Coach** | Bowling Mastery | Performance analysis, skill development, strategy design |
+| **💪 Head Physio** | Health & Fitness | Fitness assessment, injury prevention, recovery plans |
+| **👤 Player** | Performance Execution | Skill execution, performance reporting, training feedback |
 
-## Step-by-Step Setup
+### **Backend Features**
+- 🔌 **FastAPI REST API**: High-performance async backend
+- 🧠 **Groq AI Integration**: Powered by Llama 3.3 70B model
+- 🔄 **Multi-Agent Orchestration**: Coordinate multiple agents in workflows
+- 🎭 **Custom Agent Support**: Extensible architecture for new agents
+- ⚡ **Async Processing**: Efficient concurrent agent execution
 
-### 1. Clone/Download the Project
+---
+
+## Installation Steps
+
+### Prerequisites
+- Python 3.8 or higher
+- Node.js 16 or higher
+- Groq API Key ([Get one free](https://console.groq.com/))
+
+### 1️⃣ Clone the Repository
 ```bash
-git clone  https://github.com/0xLazAI/Multi-Agent-Orchestrator-Example.git
+git clone https://github.com/0xLazAI/Multi-Agent-Orchestrator-Example.git
 cd Multi-Agent-Orchestrator-Example
-# Extract or clone the multiagent folder
 ```
 
-### 2. Create Virtual Environment
-```bash
-python3 -m venv venv
-```
+### 2️⃣ Backend Setup
 
-### 3. Activate Virtual Environment
-
-**On macOS/Linux:**
-```bash
-source venv/bin/activate
-```
-
-**On Windows:**
-```bash
-venv\Scripts\activate
-```
-
-### 4. Install Dependencies
+**Install Python dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Set Up OpenAI API Key
+**Set up environment variables:**
 
-**On macOS/Linux:**
+Create a `.env` file in the root directory:
+```
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+**Start the backend server:**
 ```bash
-export OPENAI_API_KEY=your_api_key_here
+python api.py
 ```
 
-**On Windows:**
+Or use the batch file (Windows):
 ```bash
-set OPENAI_API_KEY=your_api_key_here
+start_backend.bat
 ```
 
-## Running the System
+Backend will run on: `http://localhost:8000`
 
-### Basic Execution
+### 3️⃣ Frontend Setup
+
+**Navigate to frontend directory:**
 ```bash
-python run.py
+cd frontend
 ```
 
-This will:
-1. Initialize all 6 AI agents
-2. Create a research and write workflow
-3. Execute the workflow with real AI responses
-4. Display the results
-
-### Expected Output
-```
-🚀 Multi-Agent Orchestrator
-========================================
-✅ Initialized researcher agent
-✅ Initialized writer agent
-✅ Initialized analyzer agent
-✅ Initialized translator agent
-✅ Initialized summarizer agent
-✅ Initialized code_reviewer agent
-📋 Created workflow: Research and Write Pipeline
-🔄 Executing workflow...
-✅ Completed! Generated 2 outputs
-
-📊 Result: [Real AI research output]
-📊 Result: [Real AI article output]
-```
-
-## Available Agents
-
-| Agent | Purpose | Method |
-|-------|---------|---------|
-| **Researcher** | Research and analysis | `research(topic)` |
-| **Writer** | Content creation | `write_content(topic, type)` |
-| **Analyzer** | Data analysis | `analyze(data, type)` |
-| **Translator** | Language translation | `translate(text, language)` |
-| **Summarizer** | Text summarization | `summarize(text, length)` |
-| **Code Reviewer** | Code review | `review_code(code, language)` |
-
-## Creating Custom Workflows
-
-```python
-import asyncio
-from orchestrator import MultiAgentOrchestrator, WorkflowType
-
-async def custom_workflow():
-    # Initialize
-    orchestrator = MultiAgentOrchestrator()
-    orchestrator.initialize_agents()
-    
-    # Create workflow
-    workflow_id = orchestrator.create_workflow(
-        name='Custom Pipeline',
-        workflow_type=WorkflowType.SEQUENTIAL
-    )
-    
-    # Add tasks
-    task1 = orchestrator.add_task_to_workflow(
-        workflow_id, 'researcher', 'research', {'topic': 'Your Topic'}
-    )
-    
-    task2 = orchestrator.add_task_to_workflow(
-        workflow_id, 'writer', 'write_content', 
-        {'topic': 'Your Topic', 'content_type': 'article'},
-        dependencies=[task1]
-    )
-    
-    # Execute
-    results = await orchestrator.execute_workflow(workflow_id)
-    return results
-
-# Run custom workflow
-asyncio.run(custom_workflow())
-```
-
-## Workflow Types
-
-- **Sequential**: Tasks run one after another
-- **Parallel**: Tasks run simultaneously when dependencies allow
-- **Custom**: User-defined with specific dependencies
-
-## Troubleshooting
-
-### API Key Issues
+**Install dependencies:**
 ```bash
-echo $OPENAI_API_KEY  # Check if key is set
+npm install
 ```
 
-### Virtual Environment Issues
+**Start the development server:**
 ```bash
-deactivate  # Exit virtual environment
-source venv/bin/activate  # Re-enter (macOS/Linux)
+npm run dev
 ```
 
-### Dependencies Issues
+Or use the batch file from root (Windows):
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+cd ..
+start_frontend.bat
 ```
 
-## Workshop Exercises
+Frontend will run on: `http://localhost:5173`
 
-1. **Run the basic system**: `python run.py`
-2. **Modify the topic**: Change "AI in Healthcare" to your topic
-3. **Add more agents**: Include translator or analyzer in the workflow
-4. **Create parallel workflow**: Use WorkflowType.PARALLEL
-5. **Custom workflow**: Build your own agent sequence
+### 4️⃣ Access the Application
 
-## Files Structure
+Open your browser and go to: **http://localhost:5173**
+
+---
+
+## Usage
+
+### Interact with Individual Agents
+1. Click on any agent card
+2. Enter your query (e.g., match info, player name)
+3. Get AI-powered responses from the agent
+
+### Execute Team Workflow
+1. Click "Execute Workflow" button in the header
+2. Enter match information and player name
+3. Watch as all 5 agents work together sequentially
+4. View individual agent results and full workflow output
+
+---
+
+## Tech Stack
+
+**Frontend:**
+- React + Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
+- Axios
+
+**Backend:**
+- FastAPI
+- Alith Framework
+- Groq AI (Llama 3.3 70B)
+- Python AsyncIO
+
+---
+
+## Project Structure
 
 ```
-multiagent/
-├── agents.py          # All 6 AI agents
-├── orchestrator.py    # Multi-agent orchestrator
-├── run.py            # Basic execution example
-├── requirements.txt   # Dependencies
-└── venv/             # Virtual environment
+Multi-Agent-Orchestrator-Example/
+├── frontend/              # React frontend
+│   ├── src/
+│   │   ├── components/   # UI components
+│   │   ├── services/     # API services
+│   │   └── App.jsx       # Main app
+│   └── package.json
+├── agents.py             # Agent definitions
+├── orchestrator.py       # Multi-agent orchestrator
+├── api.py               # FastAPI backend
+├── requirements.txt      # Python dependencies
+└── .env                 # Environment variables
 ```
 
-## Next Steps
+---
 
-- Modify agent prompts for your use case
-- Add new specialized agents
-- Create complex multi-step workflows
-- Integrate with your applications
-- Scale to production workloads
+## License
 
+MIT License - Feel free to use for your projects!

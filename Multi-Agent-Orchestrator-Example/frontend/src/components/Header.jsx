@@ -12,8 +12,8 @@ const Header = ({ onWorkflowClick }) => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <motion.div
-            className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center"
-            whileHover={{ rotate: 180 }}
+            className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center"
+            whileHover={{ rotate: 0 }}
             transition={{ duration: 0.3 }}
           >
             <Target className="w-6 h-6 text-white" />
@@ -40,7 +40,7 @@ const Header = ({ onWorkflowClick }) => {
             animate={{ opacity: [1, 0.5, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            <Sparkles className="w-5 h-5 text-yellow-400" />
+            <Sparkles className="w-5 h-5 text-cyan-400" />
             <span className="text-sm">AI Active</span>
           </motion.div>
         </div>

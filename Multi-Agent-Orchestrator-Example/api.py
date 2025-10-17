@@ -5,9 +5,10 @@ FastAPI Backend for Cricket Team Multi-Agent System
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 import asyncio
 from orchestrator import MultiAgentOrchestrator, WorkflowType
+from agents import GenericAgent
 
 app = FastAPI(title="Cricket Team Multi-Agent API")
 
@@ -23,6 +24,10 @@ app.add_middleware(
 # Initialize orchestrator
 orchestrator = MultiAgentOrchestrator()
 
+# Store custom agents
+custom_agents = {}
+custom_agents_info = []
+
 # Request models
 class AgentRequest(BaseModel):
     agent_type: str
@@ -31,6 +36,15 @@ class AgentRequest(BaseModel):
 class WorkflowRequest(BaseModel):
     match_info: str
     player_name: Optional[str] = "Team Players"
+
+class CustomAgentRequest(BaseModel):
+    id: str
+    name: str
+    role: str
+    description: str
+    icon: str
+    color: str
+    capabilities: List[str]
 
 # Initialize agents on startup
 @app.on_event("startup")
@@ -42,11 +56,53 @@ async def startup_event():
 async def root():
     return {"message": "Cricket Team Multi-Agent API", "status": "running"}
 
+# Add custom agent
+@app.post("/api/agents/custom")
+async def add_custom_agent(agent_request: CustomAgentRequest):
+    try:
+        # Create generic agent instance
+        agent = GenericAgent(
+            name=agent_request.name,
+            role=agent_request.role,
+            description=agent_request.description,
+            capabilities=agent_request.capabilities
+        )
+        
+        # Store the agent
+        custom_agents[agent_request.id] = agent
+        
+        # Store agent info
+        agent_info = {
+            "id": agent_request.id,
+            "name": agent_request.name,
+            "role": agent_request.role,
+            "description": agent_request.description,
+            "icon": agent_request.icon,
+            "color": agent_request.color,
+            "capabilities": agent_request.capabilities,
+            "type": agent_request.id
+        }
+        custom_agents_info.append(agent_info)
+        
+        return {"status": "success", "message": "Agent added successfully", "agent": agent_info}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# Delete custom agent
+@app.delete("/api/agents/custom/{agent_id}")
+async def delete_custom_agent(agent_id: str):
+    if agent_id in custom_agents:
+        del custom_agents[agent_id]
+        # Remove from info list
+        global custom_agents_info
+        custom_agents_info = [a for a in custom_agents_info if a["id"] != agent_id]
+        return {"status": "success", "message": "Agent deleted successfully"}
+    return {"status": "success", "message": "Agent not found or already deleted"}
+
 # Get agent information
 @app.get("/api/agents")
 async def get_agents():
-    return {
-        "agents": [
+    base_agents = [
             {
                 "id": "head_coach",
                 "name": "Head Coach",
@@ -118,7 +174,10 @@ async def get_agents():
                 ]
             }
         ]
-    }
+    
+    # Combine base agents with custom agents
+    all_agents = base_agents + custom_agents_info
+    return {"agents": all_agents}
 
 # Execute single agent
 @app.post("/api/agent/execute")
@@ -126,6 +185,17 @@ async def execute_agent(request: AgentRequest):
     try:
         agent_type = request.agent_type
         
+        # Check if it's a custom agent
+        if agent_type in custom_agents:
+            agent = custom_agents[agent_type]
+            result = await agent.execute(request.input_data)
+            return {
+                "agent": agent_type,
+                "result": result,
+                "status": "success"
+            }
+        
+        # Check if it's a base agent
         if agent_type not in orchestrator.agents:
             raise HTTPException(status_code=404, detail=f"Agent {agent_type} not found")
         

@@ -97,6 +97,36 @@ class PlayerAgent:
         prompt = f"Report performance, improvements, and feedback for: {player_name}"
         return self.agent.prompt(prompt)
 
+class GenericAgent:
+    """Generic agent for custom user-created agents"""
+    def __init__(self, name: str, role: str, description: str, capabilities: list):
+        self.name = name
+        self.role = role
+        self.description = description
+        self.capabilities = capabilities
+        
+        # Create preamble from agent details
+        capabilities_text = "\n".join([f"- {cap}" for cap in capabilities])
+        preamble = f"""You are {name}, a {role}. 
+        
+Description: {description}
+
+Your capabilities include:
+{capabilities_text}
+
+Respond to user queries based on your role and capabilities."""
+        
+        self.agent = Agent(
+            model="llama-3.3-70b-versatile",
+            base_url="https://api.groq.com/openai/v1",
+            api_key=Groq_key,
+            preamble=preamble
+        )
+    
+    async def execute(self, input_data: str) -> str:
+        """Generic execution method for any input"""
+        return self.agent.prompt(input_data)
+
 # Registry for orchestrator
 AGENT_REGISTRY = {
     "head_coach": HeadCoachAgent,

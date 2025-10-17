@@ -5,6 +5,8 @@ import { executeAgent } from '../services/api';
 
 const colorMap = {
   blue: 'from-blue-500 to-blue-700',
+  cyan: 'from-cyan-500 to-cyan-700',
+  indigo: 'from-indigo-500 to-indigo-700',
   green: 'from-green-500 to-green-700',
   red: 'from-red-500 to-red-700',
   purple: 'from-purple-500 to-purple-700',
@@ -47,7 +49,7 @@ const AgentModal = ({ agent, onClose }) => {
       case 'player':
         return 'Enter player name (e.g., "Virat Kohli")';
       default:
-        return 'Enter your input...';
+        return `Ask ${agent.name} anything...`;
     }
   };
 
@@ -93,7 +95,7 @@ const AgentModal = ({ agent, onClose }) => {
             <motion.button
               onClick={onClose}
               className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-xl flex items-center justify-center transition-colors"
-              whileHover={{ rotate: 90 }}
+              whileHover={{ rotate: 0 }}
               whileTap={{ scale: 0.9 }}
             >
               <X className="w-6 h-6 text-white" />

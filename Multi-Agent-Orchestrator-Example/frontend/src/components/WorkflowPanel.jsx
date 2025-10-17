@@ -41,12 +41,12 @@ const WorkflowPanel = ({ onClose }) => {
   const getAgentColor = (agentType) => {
     const colors = {
       head_coach: 'from-blue-500 to-blue-700',
-      batting_coach: 'from-green-500 to-green-700',
-      bowling_coach: 'from-red-500 to-red-700',
+      batting_coach: 'from-cyan-500 to-cyan-700',
+      bowling_coach: 'from-indigo-500 to-indigo-700',
       head_physio: 'from-purple-500 to-purple-700',
-      player: 'from-orange-500 to-orange-700',
+      player: 'from-green-500 to-green-700',
     };
-    return colors[agentType] || 'from-gray-500 to-gray-700';
+    return colors[agentType] || 'from-blue-500 to-cyan-500';
   };
 
   return (
@@ -58,13 +58,13 @@ const WorkflowPanel = ({ onClose }) => {
     >
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-3xl font-bold gradient-text mb-2">Workflow Execution</h2>
+          <h2 className="text-3xl font-bold text-blue-300 mb-2">Workflow Execution</h2>
           <p className="text-white/70">Execute a complete multi-agent workflow</p>
         </div>
         <motion.button
           onClick={onClose}
           className="w-10 h-10 glass-effect hover:bg-white/20 rounded-xl flex items-center justify-center transition-colors"
-          whileHover={{ rotate: 90 }}
+          whileHover={{ rotate: 0 }}
           whileTap={{ scale: 0.9 }}
         >
           <X className="w-6 h-6" />
@@ -104,7 +104,7 @@ const WorkflowPanel = ({ onClose }) => {
 
         <motion.button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4 rounded-xl flex items-center justify-center gap-3 font-semibold disabled:opacity-50 text-lg"
+          className="w-full bg-gradient-to-r from-blue-500 to-cyan-600 px-6 py-4 rounded-xl flex items-center justify-center gap-3 font-semibold disabled:opacity-50 text-lg"
           whileHover={{ scale: loading ? 1 : 1.02 }}
           whileTap={{ scale: loading ? 1 : 0.98 }}
           disabled={loading || !matchInfo.trim() || !playerName.trim()}
