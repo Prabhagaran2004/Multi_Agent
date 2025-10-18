@@ -11,6 +11,4 @@ __pycache__/
 .env.production
 .env.example
 
-
-llm_logs/
 __pycache__/

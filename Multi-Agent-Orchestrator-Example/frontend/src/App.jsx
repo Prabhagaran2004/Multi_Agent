@@ -81,7 +81,7 @@ function App() {
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              Cricket Team AI
+              Cricket Team 
             </h1>
             <p className="text-xl text-white/80">
               Multi-Agent Orchestration System

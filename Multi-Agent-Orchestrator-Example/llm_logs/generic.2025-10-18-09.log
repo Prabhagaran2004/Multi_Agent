@@ -1,0 +1,360 @@
+  2025-10-18T09:12:14.536678Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 65
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Match against Chennai super kings"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:12:17.355898Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Match Strategy: Chennai Super Kings**\n\n**Pre-Match Analysis:**\n\nChennai Super Kings (CSK) is a formidable team with a strong batting lineup, excellent spin bowling, and a well-balanced squad. They have a good mix of experienced and young players, which makes them a tough opponent. Our team needs to be well-prepared to take on the challenge.\n\n**Key Strengths of CSK:**\n\n1. **Batting:** CSK has a strong batting lineup with players like Ruturaj Gaikwad, Devon Conway, and MS Dhoni, who can anchor the innings and provide a solid foundation.\n2. **Spin Bowling:** CSK has an excellent spin bowling attack, led by Ravindra Jadeja and Moeen Ali, who can control the game and pick up crucial wickets.\n3. **MS Dhoni's Leadership:** MS Dhoni is an experienced captain who knows how to handle pressure situations and can make clever tactical decisions.\n\n**Key Weaknesses of CSK:**\n\n1. **Over-Reliance on Top Order:** CSK's batting lineup can be over-reliant on their top order, and if we can get early wickets, we can put pressure on their middle order.\n2. **Lack of Pace Bowling Options:** CSK's pace bowling attack is not as strong as their spin bowling, and if we can exploit this, we can gain an advantage.\n\n**Our Team's Strengths:**\n\n1. **Strong Pace Bowling Attack:** Our team has a well-balanced pace bowling attack, with a good mix of experienced and young bowlers.\n2. **Aggressive Batting:** Our team has an aggressive batting lineup, which can take on the CSK bowlers and post a competitive total.\n\n**Game Plan:**\n\n**Batting:**\n\n1. **Aggressive Start:** We need to start aggressively and put pressure on the CSK bowlers. Our openers should look to score quickly and provide a solid foundation.\n2. **Rotate Strike:** Our batsmen should focus on rotating the strike and not give the CSK spinners a chance to settle.\n3. **Target CSK's Pace Bowlers:** We should look to target CSK's pace bowlers and score quickly against them.\n\n**Bowling:**\n\n1. **Use Pace to Dismiss Top Order:** We should use our pace bowlers to dismiss the CSK top order quickly and put pressure on their middle order.\n2. **Spin Bowling:** Our spin bowlers should focus on controlling the game and picking up wickets in the middle overs.\n3. **Use Variations:** Our bowlers should use variations to keep the CSK batsmen guessing and not allow them to settle.\n\n**Fielding:**\n\n1. **Catch Everything:** We need to catch everything that comes our way, as CSK has a strong batting lineup and we cannot afford to drop catches.\n2. **Save Runs:** Our fielders should focus on saving runs and not give away easy singles and boundaries.\n\n**Tactics:**\n\n1. **Use of Short Balls:** We should use short balls to dismiss the CSK batsmen, especially the top order, as they can be vulnerable to short-pitched deliveries.\n2. **Field Placements:** We should use intelligent field placements to cut off boundaries and singles, and not give the CSK batsmen easy runs.\n3. **Bowling Changes:** We should make regular bowling changes to keep the CSK batsmen guessing and not allow them to settle.\n\n**Motivation:**\n\nOur team has the skills and talent to beat CSK, and we need to believe in ourselves and play to our strengths. We should focus on executing our plans and not get distracted by the opposition. If we can stay calm and focused, we can come out on top.\n\n**Team Selection:**\n\nBased on the game plan, our team selection should be:\n\n1. **Openers:** [Player 1] and [Player 2]\n2. **Middle Order:** [Player 3], [Player 4], and [Player 5]\n3. **Pace Bowlers:** [Player 6], [Player 7], and [Player 8]\n4. **Spin Bowlers:** [Player 9] and [Player 10]\n5. **All-Rounders:** [Player 11]\n\nThis team selection provides a good balance of batting, bowling, and fielding, and we should be able to execute our game plan effectively."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.8250421s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 89
+    completion_tokens: 916
+    total_tokens: 1005
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-18T09:13:21.956879Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 64
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Match against CSK"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:13:24.305546Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Match Strategy: vs. Chennai Super Kings (CSK)**\n\n**Pre-Match Analysis:**\n\n1. **CSK Strengths:**\n\t* Strong batting lineup with experienced players like MS Dhoni, Faf du Plessis, and Ruturaj Gaikwad.\n\t* Effective spin bowling attack, led by Ravindra Jadeja and Imran Tahir.\n\t* Good death bowling options, with Dwayne Bravo and Shardul Thakur.\n2. **CSK Weaknesses:**\n\t* Over-reliance on MS Dhoni's finishing abilities.\n\t* Vulnerability against pace bowling, particularly in the powerplay.\n\t* Potential inconsistency in their middle order.\n\n**Game Plan:**\n\n1. **Toss Strategy:**\n\t* Win the toss and choose to bowl first. This will allow us to exploit CSK's vulnerability against pace bowling in the powerplay.\n2. **Powerplay Strategy:**\n\t* Start with our most aggressive pace bowlers, aiming to pick up early wickets and put pressure on CSK's top order.\n\t* Use short-pitched bowling to target CSK's batsmen, particularly Faf du Plessis and Ruturaj Gaikwad.\n3. **Middle Overs Strategy:**\n\t* Introduce our spin bowlers, aiming to contain CSK's batsmen and build pressure.\n\t* Use variations in spin, pace, and length to keep CSK's batsmen guessing.\n4. **Death Overs Strategy:**\n\t* Use our best death bowlers to restrict CSK's scoring in the final overs.\n\t* Employ clever field placements, such as having a long-off and long-on, to prevent big hits.\n5. **Batting Strategy:**\n\t* Start with a solid opening partnership, aiming to set a platform for our middle order.\n\t* Be aggressive against CSK's pace bowlers, particularly in the powerplay.\n\t* Rotate the strike and build partnerships to put pressure on CSK's bowlers.\n6. **Target Setting:**\n\t* If batting first, aim to set a competitive total of 170-180 runs.\n\t* If chasing, aim to score at a rate of 8-9 runs per over in the powerplay, and then accelerate in the middle overs.\n\n**Player Roles:**\n\n1. **Opening Batsmen:**\n\t* Play cautiously in the powerplay, aiming to set a solid platform.\n\t* Be aggressive against CSK's pace bowlers.\n2. **Middle Order Batsmen:**\n\t* Rotate the strike and build partnerships.\n\t* Be prepared to accelerate the scoring rate in the middle overs.\n3. **Pace Bowlers:**\n\t* Bowl aggressively in the powerplay, aiming to pick up early wickets.\n\t* Use variations in pace and length to keep CSK's batsmen guessing.\n4. **Spin Bowlers:**\n\t* Bowl economically in the middle overs, aiming to contain CSK's batsmen.\n\t* Use variations in spin, pace, and length to keep CSK's batsmen guessing.\n\n**Motivational Message:**\n\n\"Team, this is a crucial match against a strong opponent. We need to be focused, disciplined, and aggressive in our approach. Let's use our strengths to exploit CSK's weaknesses and come out on top. Remember, we have the talent and the skills to win this match. Let's go out there and make it happen!\""
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.349211s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 88
+    completion_tokens: 712
+    total_tokens: 800
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-18T09:13:24.959773Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 55
+  messages:
+
+[1mSystem[0m:
+"You are the Batting Coach. Your role is to:\n            - Improve batting techniques\n            - Suggest training drills\n            - Analyze batting weaknesses and strengths"
+
+[1mUser[0m:
+"Provide batting training and improvement tips for: MS Dhoni"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:13:29.230885Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "MS Dhoni, one of the most renowned and respected cricketers of all time. Improving his batting technique would require a nuanced approach, as he already possesses exceptional skills. Here are some tips to help him refine his game:\n\n**Strengths to build upon:**\n\n1. **Finishing ability**: Dhoni is renowned for his exceptional finishing skills, often taking his team to victory in high-pressure situations. We can work on enhancing this skill by simulating high-pressure game scenarios in training.\n2. **Helicopter shot**: His signature shot is a key strength, allowing him to score boundaries and sixes with ease. We can focus on refining the technique to make it more effective and adaptable to different bowling styles.\n\n**Weaknesses to address:**\n\n1. **Initial struggles against spin**: Dhoni has sometimes struggled against quality spin bowling, particularly in the early stages of his innings. To overcome this, we can work on:\n\t* **Footwork drills**: Improve his ability to read the spin and length of the ball, allowing him to play more confidently against spinners.\n\t* **Rotation and sweep shots**: Develop his sweep shot to counter spin bowling, enabling him to rotate the strike and build momentum.\n2. **Playing against short-pitched bowling**: Dhoni has been known to be troubled by short-pitched deliveries, especially those aimed at his body. To counter this, we can:\n\t* **Practice against short-pitched bowling**: Expose him to a variety of short-pitched deliveries in the nets, helping him develop the necessary reflexes and technique to negotiate these balls effectively.\n\t* **Work on his pull and hook shots**: Refine his pull and hook shots to make them more effective and efficient, allowing him to score runs against short-pitched bowling.\n\n**Training drills:**\n\n1. **Simulation net sessions**: Set up scenario-based net sessions, replicating game situations and bowling styles to help Dhoni prepare for different conditions.\n2. **Spin bowling sessions**: Arrange for high-quality spin bowlers to bowl at him in the nets, allowing him to work on his footwork and rotation shots.\n3. **Short-pitched bowling drills**: Use bowling machines or have a bowler deliver short-pitched balls to help Dhoni develop his reflexes and technique.\n4. **Helicopter shot practice**: Set up a series of balls with varying lengths and speeds, allowing Dhoni to practice his helicopter shot and adapt it to different bowling styles.\n5. **Yoga and flexibility exercises**: Incorporate yoga and flexibility exercises to improve his overall fitness and athleticism, enabling him to maintain his high level of performance.\n\n**Mental preparation:**\n\n1. **Visualization techniques**: Encourage Dhoni to visualize different game scenarios, including high-pressure situations, to mental prepare himself for various challenges.\n2. **Positive self-talk**: Foster a positive mindset by emphasizing his strengths and past successes, helping him stay focused and confident under pressure.\n\nBy addressing these areas and incorporating these training drills, MS Dhoni can further refine his batting technique, making him an even more formidable force in the game."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 4.2713127s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 79
+    completion_tokens: 627
+    total_tokens: 706
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-18T09:13:29.848145Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 52
+  messages:
+
+[1mSystem[0m:
+"You are the Bowling Coach. Your role is to:\n            - Analyze bowling performance\n            - Suggest improvement drills\n            - Develop bowling strategies"
+
+[1mUser[0m:
+"Provide bowling training and improvement tips for: MS Dhoni"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:13:32.600119Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "MS Dhoni, a legendary cricketer known for his exceptional wicket-keeping and batting skills. As his bowling coach, I'll focus on improving his bowling technique, which, although not his primary skill, can still be an asset for the team.\n\n**Current Assessment:**\nMS Dhoni is a part-time bowler who can bowl medium pace and occasionally spin. His bowling action is not as refined as his wicket-keeping or batting, but he has the potential to be a useful bowler in specific situations.\n\n**Improvement Areas:**\n\n1. **Run-up and Action:** MS Dhoni's run-up is a bit short, and his action can be stiff at times. To improve, I recommend:\n\t* Increasing the length of his run-up to generate more momentum and power.\n\t* Working on a smoother, more fluid action to reduce stiffness and increase consistency.\n2. **Ball Release:** Dhoni's ball release can be a bit erratic, affecting his accuracy and control. To improve:\n\t* Practice releasing the ball at the same point every time, focusing on a consistent release angle and speed.\n\t* Develop a consistent wrist position and follow-through to ensure a smooth ball release.\n3. **Variations:** As a part-time bowler, MS Dhoni can benefit from developing a few variations to keep batsmen guessing. I suggest:\n\t* Working on a slower ball, using a different grip or action to reduce speed and create uncertainty.\n\t* Developing a cutter or a seam-up delivery to add variety to his bowling.\n4. **Field Settings:** As a wicket-keeper, MS Dhoni has an excellent understanding of the game and can use this to his advantage when bowling. I recommend:\n\t* Studying the opposition's strengths and weaknesses to set fields that can restrict their scoring.\n\t* Using his wicket-keeping experience to anticipate and set fields for different batting styles.\n\n**Drills and Exercises:**\n\n1. **Short Run-up Drill:** Set up a short run-up (about 5-6 steps) and have Dhoni practice his action, focusing on a smooth, fluid motion.\n2. **Target Practice:** Set up targets on the pitch, such as empty cans or small obstacles, and have Dhoni practice bowling at them to improve his accuracy.\n3. **Variation Practice:** Set up a drill where Dhoni practices bowling different variations, such as slower balls or cutters, to develop his skills.\n4. **Game Scenario Drills:** Create game-like scenarios, such as bowling to a batsman who is strong on the leg side, and have Dhoni practice setting fields and bowling accordingly.\n\n**Training Schedule:**\nTo ensure consistent progress, I recommend a structured training schedule with a mix of technical drills, match scenario practice, and physical conditioning. A sample schedule could be:\n\n* Monday and Wednesday: Technical drills (run-up, action, ball release, and variations)\n* Tuesday and Thursday: Match scenario practice (field settings, bowling to different batsmen)\n* Friday: Physical conditioning (gym or fitness exercises to improve overall fitness and endurance)\n* Saturday and Sunday: Rest and recovery or optional practice sessions\n\n**Strategic Tips:**\n\n1. **Use his wicket-keeping experience:** MS Dhoni's wicket-keeping experience can be a huge asset when bowling. Encourage him to use his knowledge of the game to set fields and anticipate batsmen's movements.\n2. **Identify strengths and weaknesses:** Study the opposition's strengths and weaknesses to set fields and bowl accordingly.\n3. **Vary his pace and length:** MS Dhoni can use his medium pace and occasional spin to keep batsmen guessing. Encourage him to vary his pace and length to create uncertainty.\n4. **Focus on containment:** As a part-time bowler, MS Dhoni's primary goal should be to contain the opposition's scoring rather than taking wickets. Encourage him to focus on bowling tight lines and lengths to restrict the batsmen.\n\nBy following these tips, drills, and exercises, MS Dhoni can improve his bowling skills and become a more effective part-time bowler for his team."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.7522926s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 76
+    completion_tokens: 843
+    total_tokens: 919
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-18T09:13:33.276360Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 60
+  messages:
+
+[1mSystem[0m:
+"You are the Head Physio. Your role is to:\n            - Assess player fitness\n            - Suggest injury prevention and recovery plans\n            - Monitor health status of players"
+
+[1mUser[0m:
+"Provide fitness, recovery, and injury prevention plan for: MS Dhoni"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:13:35.774801Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Player Profile: MS Dhoni**\n\n* Age: 41\n* Position: Wicketkeeper-Batsman\n* Playing Style: Aggressive, explosive batting and exceptional wicketkeeping skills\n\n**Fitness Assessment:**\n\nBased on MS Dhoni's playing style and age, the following fitness components are crucial:\n\n1. **Cardiovascular Endurance:** Moderate to high intensity\n2. **Muscular Strength and Power:** High, particularly in the upper body and legs\n3. **Flexibility and Mobility:** Good to maintain wicketkeeping and batting stance\n4. **Speed and Agility:** Moderate, with a focus on quick movements behind the stumps and between wickets\n\n**Current Health Status:**\n\nAs the Head Physio, my assessment indicates that MS Dhoni is currently experiencing some stiffness in his lower back and knees, which may be affecting his wicketkeeping and batting performance. His overall health status is good, but he requires a tailored recovery and injury prevention plan to manage his existing niggles and maintain his fitness levels.\n\n**Fitness and Conditioning Plan:**\n\n1. **Cardiovascular Training:**\n\t* 20-30 minutes of moderate-intensity jogging or cycling, 2-3 times a week\n\t* High-Intensity Interval Training (HIIT) 1-2 times a week, focusing on short bursts of intense exercise\n2. **Strength and Power Training:**\n\t* Upper Body:\n\t\t+ Dumbbell rows, shoulder presses, and bicep curls (3 sets of 8-12 reps, 2-3 times a week)\n\t\t+ Core exercises like planks and Russian twists (3 sets of 12-15 reps, 2-3 times a week)\n\t* Lower Body:\n\t\t+ Squats, lunges, and deadlifts (3 sets of 8-12 reps, 2-3 times a week)\n\t\t+ Calf raises and step-ups (3 sets of 12-15 reps, 2-3 times a week)\n3. **Flexibility and Mobility:**\n\t* Daily stretching routine focusing on hamstrings, quadriceps, hip flexors, and lower back (10-15 minutes)\n\t* Incorporate foam rolling and self-myofascial release for maintaining muscle flexibility\n4. **Speed and Agility:**\n\t* Shuttle runs and zig-zag drills (2-3 times a week)\n\t* Incorporate plyometric exercises like box jumps and depth jumps (2-3 times a week)\n\n**Recovery and Injury Prevention Plan:**\n\n1. **Warm-up and Cool-down:**\n\t* Dynamic warm-up (10-15 minutes) before each training session or match, focusing on leg swings, arm circles, and hip rotations\n\t* Static stretching (10-15 minutes) after each training session or match, focusing on major muscle groups\n2. **Injury Prevention Exercises:**\n\t* Wicketkeeping-specific exercises:\n\t\t+ Wall squats and single-leg squats to strengthen the knees and improve balance\n\t\t+ Calf raises and toe curls to strengthen the ankles and reduce the risk of ankle injuries\n\t* Batting-specific exercises:\n\t\t+ Rotator cuff exercises to prevent shoulder injuries\n\t\t+ Wrist extensions and flexions to prevent wrist and hand injuries\n3. **Rest and Recovery:**\n\t* Ensure 7-8 hours of sleep each night\n\t* Take rest days as needed, ideally 1-2 times a week\n\t* Incorporate active recovery techniques like yoga, meditation, or light swimming to aid in mental and physical recovery\n4. **Monitoring and Maintenance:**\n\t* Regularly monitor MS Dhoni's fitness levels, injury status, and overall well-being\n\t* Adjust the training plan as needed to avoid plateaus and prevent overtraining\n\t* Schedule regular massage and physiotherapy sessions to maintain muscle flexibility and prevent injuries\n\n**Progress Monitoring:**\n\nRegular progress monitoring will be conducted through:\n\n1. **Fitness Testing:** Periodic fitness assessments to evaluate cardiovascular endurance, muscular strength and power, flexibility, and speed and agility\n2. **Injury Surveillance:** Regular monitoring of MS Dhoni's injury status, including any niggles or concerns\n3. **Player Feedback:** Regular feedback sessions with MS Dhoni to understand his feelings, concerns, and suggestions regarding the training plan\n\nBy following this comprehensive fitness, recovery, and injury prevention plan, MS Dhoni can maintain his high level of fitness, reduce the risk of injury, and perform at his best on the field."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.4987473s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 84
+    completion_tokens: 936
+    total_tokens: 1020
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-18T09:13:36.462310Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 58
+  messages:
+
+[1mSystem[0m:
+"You are a cricket player. Your role is to:\n            - Execute batting, bowling, and fielding skills\n            - Report personal performance\n            - Provide feedback on training"
+
+[1mUser[0m:
+"Report performance, improvements, and feedback for: MS Dhoni"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-18T09:13:38.334334Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Player Performance Report: MS Dhoni**\n\nAs a teammate of MS Dhoni, I have had the privilege of observing and learning from his exceptional skills on the field. Here's a report on his performance, areas of improvement, and feedback:\n\n**Batting Performance:**\nMS Dhoni's batting has been phenomenal, with an average of 50.57 in ODIs and 38.09 in T20Is. His ability to finish games under pressure has been impressive, with a strike rate of 87.56 in ODIs and 126.13 in T20Is. However, there have been instances where he has taken time to settle in, which has put pressure on the team.\n\n**Bowling Performance:**\nAs a wicket-keeper batsman, MS Dhoni doesn't bowl regularly. However, in the few instances he has bowled, he has shown glimpses of his medium-pace bowling skills, picking up crucial wickets.\n\n**Fielding Performance:**\nMS Dhoni's wicket-keeping skills are unparalleled, with a staggering 829 dismissals in international cricket. His throwing style and ability to stump batsmen have been exceptional, making him one of the best wicket-keepers in the game.\n\n**Areas of Improvement:**\nWhile MS Dhoni has been an outstanding player, there are a few areas where he can improve:\n\n1. **Stroke selection:** At times, MS Dhoni has been guilty of playing expansive strokes early in his innings, which has led to his dismissal. Working on his stroke selection and rotating the strike more often could help him settle in better.\n2. **Running between wickets:** Although MS Dhoni is an excellent runner, there have been instances where he has been involved in run-outs due to a lack of communication with his batting partner. Improving his communication and decision-making while running between wickets could help reduce these instances.\n\n**Feedback:**\nMS Dhoni's experience and leadership have been invaluable to the team. His ability to stay calm under pressure and guide the team to victories has been impressive. To take his game to the next level, I would suggest:\n\n1. **Working on his footwork:** MS Dhoni's footwork has been a bit slow at times, which has made it difficult for him to rotate the strike or play certain strokes. Improving his footwork could help him become more agile and effective on the field.\n2. **Practicing his bowling:** Although MS Dhoni doesn't bowl regularly, practicing his medium-pace bowling could provide an additional option for the team and make him a more versatile player.\n\nOverall, MS Dhoni has been an exceptional player, and with a few tweaks to his game, he can continue to dominate on the field and lead the team to more victories."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 1.8723922s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 82
+    completion_tokens: 564
+    total_tokens: 646
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+

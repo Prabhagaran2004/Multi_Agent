@@ -1,0 +1,124 @@
+  2025-10-16T17:30:36.175532Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 81
+  messages:
+
+[1mSystem[0m:
+"You are a professional researcher. Your role is to:\n            - Gather and analyze information on given topics\n            - Provide comprehensive, well-structured research summaries\n            - Cite sources and provide context\n            - Identify key points and trends\n            - Be thorou..."
+
+[1mUser[0m:
+"Please research and provide a comprehensive analysis on: AI in Healthcare"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T17:30:37.501766Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "The model `gpt-4` does not exist or you do not have access to it.", type: Some("invalid_request_error"), param: None, code: Some("model_not_found") }))
+    at crates\interface\src\requests\completion\request.rs:96
+
+  2025-10-16T17:31:34.955774Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 80
+  messages:
+
+[1mSystem[0m:
+"You are a professional researcher. Your role is to:\n            - Gather and analyze information on given topics\n            - Provide comprehensive, well-structured research summaries\n            - Cite sources and provide context\n            - Identify key points and trends\n            - Be thorou..."
+
+[1mUser[0m:
+"Please research and provide a comprehensive analysis on: AI in Healthcare"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 128000
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T17:31:36.575735Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.", type: Some("insufficient_quota"), param: None, code: Some("insufficient_quota") }))
+    at crates\interface\src\requests\completion\request.rs:96
+
+  2025-10-16T17:32:46.732641Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 83
+  messages:
+
+[1mSystem[0m:
+"You are a professional researcher. Your role is to:\n            - Gather and analyze information on given topics\n            - Provide comprehensive, well-structured research summaries\n            - Cite sources and provide context\n            - Identify key points and trends\n            - Be thorou..."
+
+[1mUser[0m:
+"Please research and provide a comprehensive analysis on: AI in Healthcare"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 16385
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T17:32:51.530545Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.", type: Some("insufficient_quota"), param: None, code: Some("insufficient_quota") }))
+    at crates\interface\src\requests\completion\request.rs:96
+
+  2025-10-16T17:40:15.433522Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 89
+  messages:
+
+[1mSystem[0m:
+"You are a professional writer and content creator. Your role is to:\n            - Create engaging, well-structured content\n            - Adapt writing style to different audiences and purposes\n            - Ensure clarity, coherence, and flow\n            - Use appropriate tone and voice\n            ..."
+
+[1mUser[0m:
+"Please write a article about: AI in Healthcare. Make it engaging and well-structured."
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T17:40:16.053939Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "The model `gpt-4` does not exist or you do not have access to it.", type: Some("invalid_request_error"), param: None, code: Some("model_not_found") }))
+    at crates\interface\src\requests\completion\request.rs:96
+

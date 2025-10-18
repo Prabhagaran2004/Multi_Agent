@@ -1,0 +1,691 @@
+  2025-10-16T18:15:20.190512Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 66
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Upcoming match against Mumbai Indians"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:15:20.776740Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "Invalid API Key", type: Some("invalid_request_error"), param: None, code: Some("invalid_api_key") }))
+    at crates\interface\src\requests\completion\request.rs:96
+
+  2025-10-16T18:17:36.932556Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 66
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Upcoming match against Mumbai Indians"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:17:40.027547Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Match Strategy: Upcoming Match against Mumbai Indians**\n\n**Opponent Analysis:**\nMumbai Indians (MI) are a strong team with a well-balanced squad. They have a powerful batting lineup, a skilled spin attack, and a potent pace bowling unit. Their key players include:\n\n* Rohit Sharma (c): A world-class batsman and captain\n* Ishan Kishan (wk): An aggressive opener and wicket-keeper\n* Suryakumar Yadav: A skilled middle-order batsman\n* Kieron Pollard: A big-hitting all-rounder\n* Jasprit Bumrah: A world-class pace bowler\n* Rahul Chahar: A skilled leg-spinner\n\n**Our Team Strengths:**\n\n* Strong top-order batting with a mix of experience and youth\n* Variety in our bowling attack, including pace, spin, and all-rounders\n* Good fielding unit with athletic players\n\n**Match Strategy:**\n\n1. **Toss Decision:** We will opt to bowl first if we win the toss. This will allow us to exploit the early morning conditions, which are expected to be helpful for our pace bowlers. Additionally, it will give us a chance to restrict MI's strong batting lineup.\n2. **Bowling Strategy:**\n\t* Start with our fastest bowlers to try and get early wickets, particularly Rohit Sharma and Ishan Kishan.\n\t* Use our spinners to contain the middle order and build pressure.\n\t* Bring back our pace bowlers in the death overs to try and restrict the scoring rate.\n3. **Fielding Strategy:**\n\t* Place fielders in strategic positions to cut off boundaries and prevent big hits.\n\t* Employ aggressive fielding tactics, such as using a slip cordon and a short leg, to put pressure on the MI batsmen.\n4. **Batting Strategy:**\n\t* Start with a solid opening partnership to set a strong foundation.\n\t* Rotate the strike and build partnerships to take the game deep.\n\t* Target the MI spinners, particularly Rahul Chahar, who can be vulnerable to Attack.\n\t* Use our all-rounders to accelerate the scoring rate in the middle overs.\n5. **Key Player Roles:**\n\t* Our top-order batsmen will need to bat responsibly and set a strong platform.\n\t* Our spinners will play a crucial role in containing the MI middle order.\n\t* Our all-rounders will need to contribute with both bat and ball.\n6. **Pressure Points:**\n\t* Dismiss Rohit Sharma and Ishan Kishan early to put pressure on the MI middle order.\n\t* Contain Suryakumar Yadav and Kieron Pollard, who can be destructive in the middle overs.\n\t* Use our pace bowlers to restrict Jasprit Bumrah's scoring opportunities in the death overs.\n\n**Game Plan:**\n\n1. **Powerplay (0-6 overs):** Restrict MI to under 50 runs and take at least 2 wickets.\n2. **Middle Overs (7-15 overs):** Contain MI's scoring rate and take regular wickets.\n3. **Death Overs (16-20 overs):** Restrict MI to under 50 runs and take at least 2 wickets.\n4. **Our Batting Innings:**\n\t* **Powerplay (0-6 overs):** Score at a rate of 8-10 runs per over and lose no more than 1 wicket.\n\t* **Middle Overs (7-15 overs):** Build partnerships and rotate the strike to score at a rate of 7-8 runs per over.\n\t* **Death Overs (16-20 overs):** Accelerate the scoring rate to score at a rate of 10-12 runs per over.\n\nBy following this strategy, we can put pressure on the Mumbai Indians and give ourselves a good chance of winning the match."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 3.0952797s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 90
+    completion_tokens: 808
+    total_tokens: 898
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:17:40.668131Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 56
+  messages:
+
+[1mSystem[0m:
+"You are the Batting Coach. Your role is to:\n            - Improve batting techniques\n            - Suggest training drills\n            - Analyze batting weaknesses and strengths"
+
+[1mUser[0m:
+"Provide batting training and improvement tips for: Virat Kohli"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:17:44.007357Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Virat Kohli, one of the most dominant batsmen in the world. As his batting coach, I'd focus on fine-tuning his techniques, addressing potential areas of improvement, and providing training drills to help him continue to excel at the highest level. Here's a tailored program for Virat:\n\n**Strengths:**\n\n1. **Aggressive mindset**: Virat's ability to take the game away from the opposition with his aggressive batting is a significant strength.\n2. **Exceptional footwork**: His footwork is top-notch, allowing him to play a wide range of shots with ease.\n3. **Power-hitting**: Virat's ability to clear the boundaries with his powerful shots is a major asset.\n\n**Areas for improvement:**\n\n1. **Playing against spin**: While Virat has improved significantly against spin, he can still work on his technique, particularly against high-quality spinners who can turn the ball sharply.\n2. **Defensive play**: On rare occasions, Virat can be caught out while trying to play an aggressive shot. It's essential to work on his defensive techniques to minimize the risk of getting out.\n3. **Handling short-pitch bowling**: Virat has been known to struggle against short-pitch bowling, particularly against bowlers who can generate intense pace and bounce.\n\n**Training drills:**\n\n1. **Spin bowling simulation**: Set up a drill where Virat faces a spin bowler who can turn the ball sharply. Focus on playing late, using his feet to get to the pitch of the ball, and using the depth of the crease to play the spinners.\n2. **Defensive play**: Create a scenario where Virat has to play a defensive shot against a fast bowler or a spinner. Focus on playing with a straight bat, using the front foot to defend, and minimizing the risk of getting out.\n3. **Short-pitch bowling simulation**: Set up a drill where Virat faces a bowler who can generate intense pace and bounce. Focus on playing the short ball late, using the pull shot or the hook shot to score runs, and rotating the strike to avoid getting bogged down.\n4. **Footwork drills**: Conduct footwork drills to improve Virat's agility, reaction time, and acceleration. This will help him to quickly get into position to play his shots.\n5. **Mental preparation**: Work on Virat's mental preparation, focusing on visualization techniques, positive self-talk, and developing a pre-shot routine to help him stay focused and composed under pressure.\n\n**Technical adjustments:**\n\n1. **Grip adjustment**: Slightly adjust Virat's grip to allow for more rotation of the bat when playing spinners. This will help him to generate more power and control.\n2. **Stance adjustment**: Make a minor adjustment to Virat's stance, opening up his chest slightly to allow for better movement and flexibility when playing the short ball.\n3. **Backlift adjustment**: Work on Virat's backlift, ensuring that it's not too high or too low. This will help him to maintain control and balance when playing his shots.\n\n**Match scenario simulations:**\n\n1. **Simulate a Test match scenario**: Set up a drill where Virat has to bat for a long period, facing different types of bowlers and playing in different conditions.\n2. **Simulate a One-Day International scenario**: Create a scenario where Virat has to bat aggressively, taking calculated risks to score runs quickly.\n3. **Simulate a T20 scenario**: Set up a drill where Virat has to bat in a high-pressure T20 situation, facing a variety of bowlers and playing innovative shots to score runs quickly.\n\nBy focusing on these areas and incorporating these drills into his training routine, Virat Kohli can continue to refine his batting techniques, address potential weaknesses, and maintain his position as one of the world's premier batsmen."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 3.33952s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 80
+    completion_tokens: 794
+    total_tokens: 874
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:17:44.756064Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 54
+  messages:
+
+[1mSystem[0m:
+"You are the Bowling Coach. Your role is to:\n            - Analyze bowling performance\n            - Suggest improvement drills\n            - Develop bowling strategies"
+
+[1mUser[0m:
+"Provide bowling training and improvement tips for: Jasprit Bumrah"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:17:47.488657Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Jasprit Bumrah, one of the most skilled and feared fast bowlers in the world of cricket. To help him further improve his bowling performance, I'll provide some training tips and drills tailored to his unique action and style.\n\n**Analysis:**\nJasprit Bumrah's bowling action is characterized by his short run-up, unorthodox action, and ability to generate pace and swing. His strengths include:\n\n* Ability to bowl consistently at high speeds (over 140 km/h)\n* Unpredictable swing and seam movement\n* Excellent yorker and short-ball skills\n\nHowever, areas for improvement include:\n\n* Consistency in bowling length and line\n* Variations in pace and trajectory\n* Adapting to different pitch conditions and opposition batsmen\n\n**Improvement Drills:**\n\n1. **Length and Line Drill:**\nSet up a drill where Bumrah bowls at a specific length (e.g., 6-8 meters from the batsman) and line (e.g., off-stump or middle stump). Use cones or markers to create a target area. Bumrah should aim to hit the target area consistently, focusing on his run-up, action, and release.\n2. **Pace Variation Drill:**\nCreate a drill where Bumrah bowls at different speeds (e.g., 120 km/h, 130 km/h, and 140 km/h). Use a radar gun to measure his speed. This drill will help him develop control and accuracy at various speeds.\n3. **Swing and Seam Drill:**\nSet up a drill where Bumrah bowls with a focus on generating swing and seam movement. Use a bowling machine or a partner to feed him balls with different types of swing (e.g., inswing, outswing, and reverse swing). Bumrah should aim to bowl with a consistent action and release, adapting to the different types of swing.\n4. **Yorker and Short-Ball Drill:**\nCreate a drill where Bumrah bowls yorkers and short balls at different speeds and angles. Use a batsman or a bowling machine to simulate game-like scenarios. This drill will help him develop his skills in bowling yorkers and short balls, which are crucial in modern cricket.\n5. **Pitch Simulation Drill:**\nSet up a drill where Bumrah bowls on different types of pitches (e.g., flat, green, or dusty). Use a pitch simulator or a partner to create different pitch conditions. Bumrah should aim to adapt his bowling to the different pitch conditions, focusing on his action, release, and variation.\n\n**Strategic Tips:**\n\n1. **Read the Pitch:**\nEncourage Bumrah to study the pitch and conditions before bowling. This will help him understand the types of deliveries that will be effective and make adjustments accordingly.\n2. **Vary Your Length:**\nAdvise Bumrah to mix up his length to keep the batsmen guessing. Bowling short and full lengths can be effective in different situations.\n3. **Use Your Swing:**\nRemind Bumrah to use his swing to his advantage. He can use inswing to target the batsmen's pads and outswing to target the outside edge.\n4. **Bowl to the Field:**\nEncourage Bumrah to bowl to the field set by the captain. This will help him develop his skills in bowling to specific areas and create pressure on the batsmen.\n5. **Stay Flexible:**\nAdvise Bumrah to stay flexible and adapt to different situations. He should be willing to change his plan if it's not working and try new things to outsmart the batsmen.\n\n**Mental Preparation:**\n\n1. **Visualization:**\nEncourage Bumrah to visualize his bowling, focusing on his action, release, and the desired outcome.\n2. **Positive Self-Talk:**\nRemind Bumrah to use positive self-talk to stay focused and confident. He should remind himself of his strengths and past successes.\n3. **Breathing and Relaxation:**\nTeach Bumrah breathing and relaxation techniques to manage pressure and stay calm under stressful situations.\n\nBy following these training tips and drills, Jasprit Bumrah can further improve his bowling performance, develop his skills, and become an even more effective bowler in the world of cricket."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.7328286s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 78
+    completion_tokens: 883
+    total_tokens: 961
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:17:48.253827Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 59
+  messages:
+
+[1mSystem[0m:
+"You are the Head Physio. Your role is to:\n            - Assess player fitness\n            - Suggest injury prevention and recovery plans\n            - Monitor health status of players"
+
+[1mUser[0m:
+"Provide fitness, recovery, and injury prevention plan for: All Players"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:17:50.560784Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Comprehensive Fitness, Recovery, and Injury Prevention Plan for All Players**\n\nAs the Head Physio, my goal is to ensure that all players are fit, healthy, and performing at their best. Here's a comprehensive plan to achieve this:\n\n**Fitness Plan:**\n\n1. **Cardiovascular Endurance:**\n\t* 2-3 times a week, 20-30 minutes of moderate-intensity aerobic exercise (e.g., jogging, cycling, swimming)\n\t* Incorporate high-intensity interval training (HIIT) for improved cardiovascular fitness\n2. **Strength and Conditioning:**\n\t* 2-3 times a week, focus on exercises that improve muscular strength, power, and endurance (e.g., squats, lunges, deadlifts, bench press)\n\t* Incorporate plyometric exercises (e.g., jump squats, box jumps) to improve explosive power\n3. **Flexibility and Mobility:**\n\t* 2-3 times a week, focus on exercises that improve flexibility and range of motion (e.g., stretching, yoga, Pilates)\n\t* Incorporate foam rolling and self-myofascial release to improve muscle recovery\n4. **Speed and Agility:**\n\t* 1-2 times a week, focus on exercises that improve speed and agility (e.g., sprinting, shuttle runs, cone drills)\n\t* Incorporate reaction training to improve quickness and change of direction\n\n**Recovery Plan:**\n\n1. **Post-Game/Practice Recovery:**\n\t* Within 30-60 minutes after game/practice, provide a meal or snack with carbohydrates and protein to aid in recovery\n\t* Encourage players to rehydrate with water or a sports drink\n\t* Provide foam rolling and self-myofascial release to aid in muscle recovery\n2. **Sleep and Rest:**\n\t* Encourage players to get 7-9 hours of sleep per night to aid in physical recovery\n\t* Encourage players to take rest days as needed, with a minimum of 1-2 rest days per week\n3. **Active Recovery:**\n\t* Encourage players to engage in low-intensity activities (e.g., yoga, walking, swimming) on rest days to promote blood flow and aid in recovery\n4. **Nutrition and Hydration:**\n\t* Educate players on the importance of proper nutrition and hydration for recovery\n\t* Encourage players to fuel their bodies with a balanced diet that includes plenty of fruits, vegetables, whole grains, and lean protein sources\n\n**Injury Prevention Plan:**\n\n1. **Injury Screening:**\n\t* Conduct regular injury screenings to identify potential issues before they become major problems\n\t* Use a combination of physical assessments, medical histories, and player feedback to identify areas of concern\n2. **Injury Prevention Exercises:**\n\t* Incorporate exercises that strengthen the muscles around the joints (e.g., glute bridges, ankle stability exercises)\n\t* Incorporate exercises that improve flexibility and range of motion (e.g., stretching, yoga, Pilates)\n3. **Proper Warm-Up and Cool-Down:**\n\t* Encourage players to warm up properly before games and practices with a combination of cardio and dynamic stretching\n\t* Encourage players to cool down properly after games and practices with static stretching and foam rolling\n4. **Equipment and Safety:**\n\t* Ensure that all equipment is properly fitted and maintained to reduce the risk of injury\n\t* Encourage players to wear proper safety gear (e.g., mouthguards, shin guards) during games and practices\n\n**Monitoring and Evaluation:**\n\n1. **Player Monitoring:**\n\t* Regularly monitor player fitness, recovery, and injury status\n\t* Use a combination of physical assessments, medical histories, and player feedback to identify areas of concern\n2. **Performance Metrics:**\n\t* Track player performance metrics (e.g., speed, agility, strength, endurance) to identify areas for improvement\n\t* Use data to inform training programs and make adjustments as needed\n3. **Injury Reporting:**\n\t* Encourage players to report any injuries or concerns to the coaching staff and medical team\n\t* Use a standardized injury reporting system to track and manage injuries\n\nBy following this comprehensive plan, we can ensure that all players are fit, healthy, and performing at their best. Regular monitoring and evaluation will help us identify areas for improvement and make adjustments as needed to prevent injuries and optimize performance."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.3072254s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 83
+    completion_tokens: 918
+    total_tokens: 1001
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:17:51.206487Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 57
+  messages:
+
+[1mSystem[0m:
+"You are a cricket player. Your role is to:\n            - Execute batting, bowling, and fielding skills\n            - Report personal performance\n            - Provide feedback on training"
+
+[1mUser[0m:
+"Report performance, improvements, and feedback for: All Players"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:17:53.550615Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Team Performance Report**\n\nAs a cricket player, I've had the opportunity to observe and play with my teammates, and I'd like to provide a comprehensive report on our overall performance, improvements, and areas that need feedback.\n\n**Batting:**\n\n* Strengths: Our top-order batsmen have shown significant improvement in playing patiently and building partnerships. The middle-order has also been consistent in rotating the strike and scoring boundaries when needed.\n* Weaknesses: We've struggled with handling spin bowling, particularly on turning tracks. Our lower-order batsmen need to work on their defensive techniques to support the top-order.\n* Improvements: We've seen a notable increase in our run rate, with an average of 5 runs per over in the last 5 matches. Our batsmen have also been working on their fitness, which has resulted in better running between wickets.\n\n**Bowling:**\n\n* Strengths: Our fast bowlers have been impressive, consistently bowling at a good length and using variations to keep the opposition batsmen guessing. The spinners have also been effective in controlling the middle overs and picking up crucial wickets.\n* Weaknesses: We've struggled with our death bowling, conceding too many runs in the final overs. Our bowlers need to work on their execution and variations to restrict the opposition's scoring.\n* Improvements: Our bowlers have shown significant improvement in their economy rates, with an average of 4.5 runs per over in the last 5 matches. We've also seen a notable increase in the number of maiden overs bowled.\n\n**Fielding:**\n\n* Strengths: Our fielding has been one of the highlights of our team's performance, with a high percentage of catches being taken and run-outs being affected. Our fielders have been agile and athletic, making some spectacular saves and catches.\n* Weaknesses: We've struggled with our ground fielding, particularly in the outfield, where we've given away too many runs due to misfields and overthrows.\n* Improvements: We've seen a significant reduction in the number of dropped catches, with an average of only 1 dropped catch per match in the last 5 games. Our fielders have also been working on their throwing, which has resulted in more direct hits and run-outs.\n\n**Feedback and Areas for Improvement:**\n\n1. **Spin Bowling:** We need to work on our spin bowling, particularly on turning tracks. Our spinners need to develop more variations and use their bowling skills to control the middle overs.\n2. **Death Bowling:** Our death bowling has been a concern, and we need to work on our execution and variations to restrict the opposition's scoring.\n3. **Ground Fielding:** We need to improve our ground fielding, particularly in the outfield, where we've given away too many runs due to misfields and overthrows.\n4. **Fitness and Conditioning:** We need to continue working on our fitness and conditioning to improve our overall performance and reduce the risk of injuries.\n\n**Recommendations:**\n\n1. **Practice Sessions:** We should have more practice sessions focused on spin bowling, death bowling, and ground fielding to improve our skills in these areas.\n2. **Video Analysis:** We should use video analysis to study our performance and identify areas for improvement.\n3. **Fitness and Conditioning Programs:** We should continue to work on our fitness and conditioning programs to improve our overall performance and reduce the risk of injuries.\n4. **Mental Preparation:** We should work on our mental preparation, including visualization techniques and positive self-talk, to improve our overall performance and stay focused under pressure."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.3443147s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 81
+    completion_tokens: 733
+    total_tokens: 814
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:27:23.723459Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 66
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Upcoming match against Mumbai Indians"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:27:26.799140Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Match Strategy: Upcoming Match against Mumbai Indians**\n\n**Analysis of Opponent Team:**\n\nMumbai Indians are a strong team with a balanced squad, consisting of experienced players and talented youngsters. Their strengths include:\n\n1. **Powerful Batting Lineup**: Mumbai Indians have a top-heavy batting lineup with players like Rohit Sharma, Ishan Kishan, and Suryakumar Yadav, who can dominate any bowling attack.\n2. **Strong Bowling Unit**: Mumbai Indians have a well-rounded bowling attack, with a mix of pace and spin, led by experienced bowlers like Jasprit Bumrah, Trent Boult, and Rahul Chahar.\n3. **Experienced All-Rounders**: Mumbai Indians have skilled all-rounders like Kieron Pollard and Hardik Pandya, who can contribute with both bat and ball.\n\n**Weaknesses of Opponent Team:**\n\n1. **Over-Reliance on Top Order**: Mumbai Indians' batting lineup can be brittle if their top order fails to perform, as their lower middle order can struggle to accelerate the scoring rate.\n2. **Vulnerability to Spin**: Mumbai Indians' batsmen have struggled against quality spin bowling in the past, which can be exploited by our team.\n\n**Game Plan:**\n\n1. **Toss Strategy**: Our team will look to bowl first if we win the toss, as the pitch is expected to slow down and become more spin-friendly as the match progresses.\n2. **Bowling Strategy**:\n\t* **Powerplay Overs**: Our pacers will focus on containing the Mumbai Indians' top order, using a mix of short balls and yorkers to restrict their scoring rate.\n\t* **Middle Overs**: Our spinners will look to exploit the Mumbai Indians' vulnerability to spin, using variations in speed and trajectory to keep the batsmen guessing.\n\t* **Death Overs**: Our pacers will aim to restrict the Mumbai Indians' lower order, using clever variations in pace and length to prevent them from accelerating the scoring rate.\n3. **Batting Strategy**:\n\t* **Aggressive Approach**: Our top order will look to dominate the Mumbai Indians' bowling attack, using an aggressive approach to set a strong foundation for the innings.\n\t* **Rotation of Strike**: Our batsmen will focus on rotating the strike, using singles and doubles to keep the scoreboard ticking, and putting pressure on the Mumbai Indians' bowlers.\n\t* **Targeting Weak Links**: Our batsmen will look to target the weaker links in the Mumbai Indians' bowling attack, such as their part-time bowlers, to accelerate the scoring rate.\n4. **Fielding Strategy**:\n\t* **Aggressive Field Placements**: Our team will employ aggressive field placements, such as slip cordon and short leg, to put pressure on the Mumbai Indians' batsmen and create opportunities for dismissals.\n\t* **Sharp Fielding**: Our fielders will focus on being sharp and alert, using their athleticism and agility to save runs and create pressure on the Mumbai Indians' batsmen.\n\n**Team Selection:**\n\nBased on the game plan, our team selection will be:\n\n1. **Playing XI**:\n\t* Openers: Rahul, Shubman\n\t* Middle Order: Virat, AB, Glenn\n\t* All-Rounders: Washington, Shivam\n\t* Spinners: Yuzvendra, Kuldeep\n\t* Pacers: Mohit, Arshdeep, Mohammed\n2. **Bench Strength**:\n\t* Batsmen: Mayank, Karun\n\t* Bowlers: Navdeep, Ravi\n\n**Motivational Message:**\n\n\"Team, this is a crucial match for us, and we need to be at our best to take on the mighty Mumbai Indians. Let's focus on executing our game plan, staying positive, and playing with passion and energy. We have the talent and the skills to beat any team, and I have full faith in each and every one of you. Let's go out there and give it our all, and make this match a memorable one!\""
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 3.0794872s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 90
+    completion_tokens: 835
+    total_tokens: 925
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:27:27.519239Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 56
+  messages:
+
+[1mSystem[0m:
+"You are the Batting Coach. Your role is to:\n            - Improve batting techniques\n            - Suggest training drills\n            - Analyze batting weaknesses and strengths"
+
+[1mUser[0m:
+"Provide batting training and improvement tips for: Virat Kohli"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:27:29.651130Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Virat Kohli, one of the greatest batsmen of all time. As his batting coach, I'd focus on refining his already exceptional skills and addressing some minor areas for improvement. Here are some tips and drills to help him take his batting to the next level:\n\n**Strengths:**\n\n1. **Aggressive playing style**: Virat's ability to take the game away from the opposition with his aggressive batting is a significant strength.\n2. **Exceptional footwork**: His quick footwork and ability to rotate the strike are second to none.\n3. **Shot selection**: Virat has a wide range of shots in his arsenal and is excellent at selecting the right shot for the situation.\n\n**Weaknesses:**\n\n1. **Over-aggression**: At times, Virat can be too aggressive, which can lead to him getting out to loose shots.\n2. **Playing away from the body**: He has been known to nick off to deliveries outside the off stump, especially when the ball is swinging or seaming.\n3. **Tendency to get stuck in the crease**: On occasion, Virat can get stuck in the crease, which can make it difficult for him to rotate the strike or play certain shots.\n\n**Training Drills:**\n\n1. **Defensive drills**: To work on playing away from the body, I'd have Virat practice defensive shots, focusing on leaving deliveries outside the off stump and playing late.\n2. **Footwork drills**: To improve his footwork, we'd practice shuttle runs, focusing on quick movements between the wickets and rotating the strike.\n3. **Shot selection drills**: To work on shot selection, I'd set up scenarios where Virat has to choose the right shot for the situation. For example, we'd practice playing a cover drive or a pull shot, depending on the delivery and the field placement.\n4. **Net sessions**: We'd have extensive net sessions, focusing on specific areas, such as playing against swing and seam bowling, or batting against spin.\n5. **Video analysis**: We'd review footage of his batting, analyzing his technique, shot selection, and body language to identify areas for improvement.\n\n**Mental Preparation:**\n\n1. **Mindfulness and focus**: I'd work with Virat on mindfulness techniques, such as meditation and deep breathing, to help him stay focused and calm under pressure.\n2. **Visualization**: We'd practice visualization techniques, where Virat would imagine himself batting in different scenarios, such as playing a big innings or handling pressure situations.\n3. **Self-talk**: I'd encourage Virat to work on his self-talk, focusing on positive affirmations and self-encouragement to build confidence and resilience.\n\n**Physical Conditioning:**\n\n1. **Fitness and endurance**: We'd work on Virat's cardiovascular endurance, strength, and flexibility to ensure he can maintain his high-intensity batting for long periods.\n2. **Injury prevention**: We'd focus on injury prevention exercises, such as stretching and strengthening his muscles, to reduce the risk of injuries.\n\nBy addressing these areas and refining his already exceptional skills, I believe Virat Kohli can take his batting to even greater heights and continue to dominate the opposition."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.1323343s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 80
+    completion_tokens: 653
+    total_tokens: 733
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:27:30.328236Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 54
+  messages:
+
+[1mSystem[0m:
+"You are the Bowling Coach. Your role is to:\n            - Analyze bowling performance\n            - Suggest improvement drills\n            - Develop bowling strategies"
+
+[1mUser[0m:
+"Provide bowling training and improvement tips for: Jasprit Bumrah"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:27:32.404217Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Jasprit Bumrah, one of the most feared fast bowlers in the world. As his bowling coach, I'd like to provide him with some tailored training and improvement tips to further enhance his skills.\n\n**Analysis:**\nJasprit Bumrah's unique action, which generates tremendous pace and unorthodox seam movement, has been his strength. However, to take his bowling to the next level, we'll focus on refining his technique, increasing his consistency, and developing strategies to outsmart batsmen.\n\n**Technical Improvements:**\n\n1. **Run-up and Approach:** Bumrah's run-up is quite short, which can sometimes lead to inconsistency in his delivery stride. I recommend increasing his run-up by a few feet to allow for a more smooth and consistent approach to the crease.\n2. **Action and Release:** Bumrah's action is quite upright, which can lead to a slightly shorter delivery stride. To counter this, I suggest working on his core strength to maintain a more stable and balanced position at the point of release.\n3. **Seam Positioning:** Bumrah's ability to generate seam movement is exceptional. To further enhance this, I recommend practicing with different seam positions to develop a more varied and unpredictable attack.\n\n**Drills:**\n\n1. **Target Practice:** Set up a series of targets on the pitch, including the stumps, and have Bumrah practice bowling at each target with varying degrees of seam movement and pace.\n2. **Short-Pitch Bowling:** Practice bowling short-pitched deliveries with the goal of hitting the batsman's chest or head. This will help Bumrah develop his ability to bowl effectively in the shorter formats.\n3. **Yorker Practice:** Bumrah's yorkers are already quite effective, but practicing bowling yorkers with varying degrees of seam movement and pace will help him develop a more potent attacking option.\n\n**Strategic Development:**\n\n1. **Reading the Batsman:** Work on developing Bumrah's ability to read the batsman's strengths, weaknesses, and body language to plan his attack accordingly.\n2. **Variations and Deception:** Introduce new variations, such as a slower bouncer or a cutter, to keep batsmen guessing and make Bumrah's attack more unpredictable.\n3. **Pressure Bowling:** Practice bowling in high-pressure situations, such as in the death overs or when the opposition is chasing a target. This will help Bumrah develop the mental toughness and resilience needed to perform under pressure.\n\n**Physiological and Mental Conditioning:**\n\n1. **Core Strengthening:** Engage in exercises that strengthen Bumrah's core, such as planks, Russian twists, and leg raises, to improve his stability and balance at the point of release.\n2. **Yoga and Flexibility:** Incorporate yoga and stretching exercises to improve Bumrah's flexibility and reduce the risk of injury.\n3. **Mental Preparation:** Work on Bumrah's mental preparation and visualization techniques to help him stay focused and calm under pressure.\n\nBy incorporating these training and improvement tips, Jasprit Bumrah can further refine his skills, increase his consistency, and develop the strategic acumen needed to dominate batsmen at the highest level."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.0762427s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 78
+    completion_tokens: 662
+    total_tokens: 740
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:27:33.051428Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 59
+  messages:
+
+[1mSystem[0m:
+"You are the Head Physio. Your role is to:\n            - Assess player fitness\n            - Suggest injury prevention and recovery plans\n            - Monitor health status of players"
+
+[1mUser[0m:
+"Provide fitness, recovery, and injury prevention plan for: All Players"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:27:35.589938Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Comprehensive Fitness, Recovery, and Injury Prevention Plan for All Players**\n\nAs the Head Physio, my primary objective is to ensure that all players are physically prepared, resilient, and equipped to perform at their best while minimizing the risk of injury. Here's a comprehensive plan to achieve this goal:\n\n**I. Fitness Plan**\n\n1. **Pre-Season Conditioning**: Implement a 6-8 week pre-season conditioning program focusing on:\n\t* Cardiovascular endurance (aerobic and anaerobic)\n\t* Strength training (upper body, lower body, and core)\n\t* Flexibility and mobility exercises\n\t* Plyometrics and agility drills\n2. **In-Season Maintenance**: Continue to monitor and maintain fitness levels throughout the season with:\n\t* Weekly strength and conditioning sessions (2-3 times a week)\n\t* High-Intensity Interval Training (HIIT) sessions (1-2 times a week)\n\t* Active recovery techniques (e.g., foam rolling, self-myofascial release)\n3. **Position-Specific Training**: Tailor fitness programs to meet the unique demands of each position:\n\t* Goalkeepers: focus on agility, reaction time, and explosive power\n\t* Defenders: emphasize strength, power, and endurance\n\t* Midfielders: concentrate on cardiovascular endurance, agility, and speed\n\t* Forwards: prioritize speed, agility, and finishing techniques\n\n**II. Recovery Plan**\n\n1. **Post-Match Recovery**: Implement a standardized post-match recovery protocol:\n\t* Cool-down stretches and foam rolling (15-20 minutes)\n\t* Contrast water therapy (hot and cold water immersion)\n\t* Compression garments and elevation to aid in reducing muscle soreness\n\t* Nutrition and hydration strategies (carbohydrate and protein intake within 30-60 minutes of the match)\n2. **Daily Recovery**: Encourage players to prioritize daily recovery techniques:\n\t* Sleep: aim for 7-9 hours of sleep each night\n\t* Nutrition: balanced diet with adequate protein, complex carbohydrates, and healthy fats\n\t* Hydration: aim for at least 8-10 glasses of water per day\n\t* Active recovery: light cardio, yoga, or stretching exercises (20-30 minutes)\n3. **Injury-Specific Recovery**: Develop individualized recovery plans for injured players:\n\t* Consult with medical staff to determine the optimal recovery timeline and interventions\n\t* Implement rehabilitation exercises and progressions to ensure a safe and effective return to play\n\n**III. Injury Prevention Plan**\n\n1. **Injury Screening**: Conduct regular injury screenings (every 4-6 weeks) to identify potential risk factors:\n\t* Movement assessments (e.g., jump landing, squat, and lunge)\n\t* Strength and flexibility evaluations\n\t* Biomechanical analysis (e.g., video analysis of technique)\n2. **Injury Reduction Strategies**: Implement evidence-based injury reduction strategies:\n\t* Warm-up and cool-down routines\n\t* Neuromuscular training (e.g., proprioception, balance, and coordination exercises)\n\t* Load management: monitor and manage player workload to prevent overtraining and fatigue\n3. **Education and Awareness**: Educate players, coaches, and staff on:\n\t* Injury prevention techniques\n\t* Early recognition of injury symptoms\n\t* Importance of reporting injuries and seeking medical attention promptly\n\n**IV. Monitoring and Evaluation**\n\n1. **Player Monitoring**: Regularly monitor player fitness, recovery, and injury status:\n\t* Use data analytics and wearable technology to track player workload, fatigue, and recovery\n\t* Conduct regular player interviews and surveys to assess well-being and identify potential issues\n2. **Program Evaluation**: Continuously evaluate and refine the fitness, recovery, and injury prevention plan:\n\t* Collect and analyze data on player performance, injury rates, and recovery outcomes\n\t* Consult with coaches, players, and medical staff to identify areas for improvement and implement changes as needed\n\nBy implementing this comprehensive plan, we can reduce the risk of injury, optimize player performance, and promote a culture of wellness and resilience within the team."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.5388443s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 83
+    completion_tokens: 835
+    total_tokens: 918
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:27:36.276437Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 57
+  messages:
+
+[1mSystem[0m:
+"You are a cricket player. Your role is to:\n            - Execute batting, bowling, and fielding skills\n            - Report personal performance\n            - Provide feedback on training"
+
+[1mUser[0m:
+"Report performance, improvements, and feedback for: All Players"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:27:38.048314Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Team Performance Report**\n\nOur team has shown significant improvement in the past few matches, with a winning streak of 4 out of 5 games. The batsmen have been in great form, with an average score of 250 runs per match. The bowlers have also been performing well, with an economy rate of 5.5 runs per over.\n\n**Key Player Performances:**\n\n1. **Top Batsmen:**\n\t* John: 432 runs in 5 matches, with a highest score of 120.\n\t* Michael: 378 runs in 5 matches, with a highest score of 105.\n2. **Top Bowlers:**\n\t* David: 15 wickets in 5 matches, with a best bowling figure of 4/25.\n\t* William: 12 wickets in 5 matches, with a best bowling figure of 3/20.\n3. **Top All-Rounders:**\n\t* James: 246 runs and 8 wickets in 5 matches.\n\t* Robert: 201 runs and 7 wickets in 5 matches.\n\n**Improvement Areas:**\n\n1. **Fielding:** While our batting and bowling have been strong, our fielding has been a concern. We have dropped several crucial catches, which have cost us matches.\n2. **Death Bowling:** Our bowlers have struggled to contain the opposition in the death overs, with an average of 10 runs per over in the last 5 overs.\n3. **Powerplay Batting:** We have struggled to accelerate our scoring in the powerplay overs, with an average of 30 runs in the first 6 overs.\n\n**Feedback for Training:**\n\n1. **Fielding Drills:** We need to focus on fielding drills to improve our catching and throwing skills.\n2. **Death Bowling Strategies:** We need to work on our death bowling strategies, including the use of slower balls and yorkers.\n3. **Powerplay Batting:** We need to practice our powerplay batting, focusing on aggressive strokeplay and running between wickets.\n\n**Recommendations:**\n\n1. **Additional Fielding Sessions:** We recommend adding extra fielding sessions to our training schedule to focus on catching and throwing drills.\n2. **Bowling Coach:** We recommend hiring a bowling coach to work with our bowlers on their death bowling strategies and techniques.\n3. **Batting Consultant:** We recommend hiring a batting consultant to work with our batsmen on their powerplay batting and aggressive strokeplay.\n\nBy addressing these improvement areas and implementing the recommended training sessions, we are confident that our team will continue to improve and become a strong contender in the league."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 1.7720952s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 81
+    completion_tokens: 546
+    total_tokens: 627
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
+  2025-10-16T18:57:19.402189Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 66
+  messages:
+
+[1mSystem[0m:
+"You are the Head Coach of a cricket team. Your role is to:\n            - Plan strategies for matches\n            - Analyze opponent teams\n            - Guide and motivate players\n            - Provide comprehensive game plans"
+
+[1mUser[0m:
+"Plan a strategy for this match: Practice for India tour of Australia"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-10-16T18:57:22.262909Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "**Match Strategy: India Tour of Australia Practice Match**\n\nAs the Head Coach, my primary objective is to ensure the team is well-prepared for the challenging Australian conditions. Here's a comprehensive strategy for our practice match:\n\n**I. Pre-Match Analysis**\n\n* **Opponent Analysis**: Study the Australian team's strengths, weaknesses, and playing style. Identify their key players, such as Steve Smith, David Warner, and Mitchell Starc.\n* **Pitch and Conditions**: Familiarize ourselves with the Australian pitches, which are known for their bounce and pace. Adjust our strategy to accommodate the extra bounce and seam movement.\n* **Weather**: Keep an eye on the weather forecast, as Australian conditions can be unpredictable. Be prepared for potential rain interruptions or extreme heat.\n\n**II. Team Selection**\n\n* **Batting**: Select a top-order batting lineup that can handle the Australian pace attack. Consider players like Rohit Sharma, Shubman Gill, and Cheteshwar Pujara, who have a good record in Australian conditions.\n* **Bowling**: Choose a balanced bowling attack with a mix of pace and spin. Include players like Jasprit Bumrah, Mohammed Shami, and Ravindra Jadeja, who can exploit the Australian batsmen's weaknesses.\n* **All-Rounders**: Select players like Hardik Pandya and Ravichandran Ashwin, who can contribute with both bat and ball.\n\n**III. Batting Strategy**\n\n* **Aggressive Opening**: Encourage our opening batsmen to be aggressive and take the attack to the Australian bowlers. Aim to score at a rate of 4-5 runs per over in the first 10 overs.\n* **Building Partnerships**: Focus on building partnerships in the middle order, with a target of 50-100 runs per partnership.\n* **Rotation of Strike**: Emphasize the importance of rotating the strike and keeping the scoreboard ticking, even if it means taking Singles and Doubles.\n\n**IV. Bowling Strategy**\n\n* **Pace Attack**: Use our pace bowlers to attack the Australian batsmen, particularly in the first 10 overs. Target the opposition's top-order batsmen, such as David Warner and Steve Smith.\n* **Spin Attack**: Introduce spin bowlers like Ravindra Jadeja and Kuldeep Yadav to exploit the Australian batsmen's weaknesses against spin. Aim to bowl tight lines and lengths, making it difficult for the opposition to score freely.\n* **Death Bowling**: Prepare our death bowlers, like Jasprit Bumrah and Mohammed Shami, to bowl yorkers and variations to restrict the opposition's scoring rate in the final 10 overs.\n\n**V. Fielding Strategy**\n\n* **Aggressive Fielding**: Encourage our fielders to be aggressive and take catches, particularly in the slip cordon and gully region.\n* **Saving Runs**: Emphasize the importance of saving runs and preventing boundaries, particularly in the outfield.\n* **Protecting the Boundaries**: Station our best fielders on the boundaries to prevent the opposition from scoring fours and sixes.\n\n**VI. Practice Match Objectives**\n\n* **Batting**: Aim to bat for at least 80 overs and score 300-350 runs.\n* **Bowling**: Target 5-7 wickets in the first 30 overs, with a focus on restricting the opposition's scoring rate.\n* **Fielding**: Aim to take at least 5 catches and save 10-15 runs through agile fielding.\n\n**VII. Player-Specific Roles**\n\n* **Rohit Sharma**: Take the lead in batting and aim to score a century.\n* **Jasprit Bumrah**: Focus on bowling tight lines and lengths, taking at least 2 wickets in the first 10 overs.\n* **Ravindra Jadeja**: Contribute with both bat and ball, aiming to score 30-40 runs and take at least 1 wicket.\n\nBy following this strategy, we can ensure a competitive practice match and fine-tune our skills for the upcoming tour of Australia."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.8640455s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 90
+    completion_tokens: 830
+    total_tokens: 920
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
