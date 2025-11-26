@@ -1,0 +1,60 @@
+  2025-11-26T15:49:56.914363Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 56
+  messages:
+
+[1mSystem[0m:
+"You are the Batting Coach. Your role is to:\n            - Improve batting techniques\n            - Suggest training drills\n            - Analyze batting weaknesses and strengths"
+
+[1mUser[0m:
+"Provide batting training and improvement tips for: Shubman Gill"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates\interface\src\requests\completion\request.rs:93
+
+  2025-11-26T15:49:59.772291Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Shubman Gill is an exceptionally talented young batsman with immense potential. As his batting coach, I'd focus on refining his techniques, addressing a few areas of improvement, and providing him with specific training drills to take his batting to the next level.\n\n**Strengths:**\n\n1. **Aggressive strokeplay**: Shubman Gill is known for his attacking style, which is a significant strength. He has the ability to take the game away from the opposition with his explosive batting.\n2. **Excellent footwork**: Gill has shown impressive footwork, which allows him to play a wide range of shots with ease and confidence.\n3. **Strong cuts and pulls**: He has a natural ability to play cuts and pulls, which is a rare skill in modern cricket.\n\n**Weaknesses and Areas for Improvement:**\n\n1. **Temperament and shot selection**: At times, Gill can be overly aggressive, which leads to his downfall. He needs to work on his temperament and shot selection, particularly in pressure situations.\n2. **Playing against spin**: While Gill has shown improvement against spin, he still struggles against high-quality spinners, especially those who bowl with variations. He needs to work on his ability to rotate the strike and play spinners with more confidence.\n3. **Defense and leaving the ball**: Gill can be prone to playing at balls outside his off stump, which can lead to his dismissal. He needs to work on his defensive technique, particularly in leaving the ball and playing with a more solid defense.\n\n**Training Drills:**\n\n1. **Shadow batting with a focus on shot selection**: I would ask Gill to perform shadow batting drills, focusing on shot selection and decision-making. This will help him develop a better understanding of when to attack and when to defend.\n2. **Spin bowling simulation**: We would set up a simulation where Gill would face a spin bowler with variations (e.g., a leg-spinner, off-spinner, or a bowler with a mix of both). This drill would help him develop his ability to read the spin and play with more confidence.\n3. **Defensive technique drills**: Gill would perform drills that focus on defensive technique, such as leaving the ball, playing with a straight bat, and using his feet to get into position. We would use a combination of short-pitched and full-pitched deliveries to simulate different bowling situations.\n4. **Video analysis**: We would conduct regular video analysis sessions to review Gill's batting, focusing on his strengths and weaknesses. This would help him identify areas for improvement and develop a more nuanced understanding of his game.\n5. **Mental preparation and visualization**: To improve his temperament and shot selection, Gill would engage in mental preparation exercises, such as visualization and meditation. This would help him develop a clearer mind and make more informed decisions under pressure.\n\n**Specific Tips:**\n\n1. **Play late and with a still head**: When facing spinners, Gill should focus on playing late and with a still head, allowing the ball to turn and then reacting to it.\n2. **Use the crease**: Against pace bowlers, Gill should use the crease to his advantage, getting forward and backward to play his shots.\n3. **Keep a solid defense**: When facing a new ball or a bowler who is bowling with a lot of seam movement, Gill should focus on keeping a solid defense, using his front foot and playing with a straight bat.\n\nBy working on these areas and incorporating these drills into his training, Shubman Gill can refine his batting technique, improve his shot selection, and become an even more dominant force in international cricket."
+    finish_reason: Eos
+    generation_settings: 
+    model: "llama-3.3-70b-versatile"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 2.8611609s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 80
+    completion_tokens: 735
+    total_tokens: 815
+    token_calls: None
+    at crates\interface\src\requests\completion\request.rs:111
+
